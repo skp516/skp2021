@@ -1,1 +1,12 @@
-111
+$ git remote add origin git@github.com:用户名/仓库名.git  --关联远程仓库
+
+$ git push -u origin master  --上传
+
+$ git pull --rebase origin master  --合并
+
+$ git add .  --全部上传暂存
+
+$ git add filename
+
+$ git commit -m '提交时的信息'  --提交
+
