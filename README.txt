@@ -10,3 +10,5 @@ $ git add filename
 
 $ git commit -m '提交时的信息'  --提交
 
+$git reset [--hard] 
+$git clean -f -d  --放弃本地修改还原
