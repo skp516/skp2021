@@ -6,5 +6,8 @@
      lists:seq(A,B) %返回从A到B所有整数的列表
 4、定义自己的控制抽象时，同参数的相同函数，更苛刻的条件放在前面，例：for(Max,Max,F)在前，for(I,Max,F)在后
 5、erlang函数的返回值是最后一条语句
-6、函数做参数只能是匿名函数，若要使用已有参数，例：math_functions:filter(fun(X) ->math_functions:even(X) end,[1,2,3,4,1.0,2.0,3.0,4.0]).
+6、函数做参数只能匿名函数，若使用已有函数，例：math_functions:filter(fun(X) ->math_functions:even(X) end,[1,2,3,4]).
+	6.1、修改六：math_functions:filter(fun even/1 ,[1,2,3,4]).
 7、映射组比较时，先比较长度，再比较键，再比较值
+8、erlang的==相当于java的==，=：=相当于equals
+9、详见DAY7作业rpc函数
